@@ -1,0 +1,12 @@
+  <div class="row scrolling">
+    <div class="col-xs-4 col-sm-6 col-md-6 col-lg-6" *ngFor="let slide of slides; let i = index">
+      <img class="thumbnailImages img-responsive thumbnail img-def" src="{{slide.src}}"
+           (click)="onChoose(slide)"
+           (click)="resize($event)"
+
+           alt="">
+    </div>
+  </div>
+
+  <!--(click)="showImgInModal($event)"-->
+  <!--data-toggle="modal" data-target="#myModal"-->

@@ -1,3 +1,41 @@
-<h1>
-  {{title}}
-</h1>
+<!--<p>{{name}}</p>-->
+<!--<tabs>-->
+<!---->
+<!--<tab [tabTitle]="'Tab 1'">Tab 1 Content</tab>-->
+<!--<tab tabTitle="Tab 2">Tab 2 Content</tab>-->
+<!--</tabs>-->
+<div id="instead-body">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button id="navBtn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav" (click)="hide()">
+        <li [routerLinkActive]="['active']"><a routerLink="home">Home<span class="sr-only">(current)</span></a></li>
+        <li [routerLinkActive]="['active']"><a routerLink="about">About</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!--<div class="jumbotron text-center">-->
+  <!--<div class="container">-->
+    <!--<div class="row">-->
+      <!--<div>-->
+        <!--<h1>ПВХ плитка - Планкіт</h1>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+
+    <router-outlet></router-outlet>
+
+</div>

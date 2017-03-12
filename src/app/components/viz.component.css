@@ -1,0 +1,16 @@
+.item-main-pic {
+  width: 400px;
+  height: auto;
+  padding: 5px;
+  float: right;
+}
+/*.block-size {*/
+  /*width: auto;*/
+  /*min-height: 500px;*/
+/*}*/
+.ifHidden {
+  display: none;
+}
+.ifNotHidden {
+  display: block;
+}
