@@ -9,13 +9,11 @@ import { Slides } from './slides';
 })
 export class ModalComponent  {
   @Input() slide: Slides;
-  myModal: string;
 
   constructor() {
   }
 
 clicker() {
-  // document.getElementById("startPop").click();
 }
 }
 

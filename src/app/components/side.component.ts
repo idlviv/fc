@@ -1,8 +1,6 @@
 import { Component, Output, Input, EventEmitter, Renderer } from '@angular/core';
 import { Slides } from './slides';
-// @Directive({
-//   selector: '[myHighlight]'
-// })
+
 @Component({
   moduleId: module.id,
   selector: 'side-component',
@@ -10,7 +8,6 @@ import { Slides } from './slides';
   styleUrls: ['./side.component.css']
 })
 export class SideComponent {
-  dt: string;
   @Output() choose = new EventEmitter();
   @Output() hide = new EventEmitter();
   // @Output() callModal = new EventEmitter();
@@ -18,20 +15,21 @@ export class SideComponent {
 
 
   constructor(private render:Renderer) {
-    this.dt = '#myModal';
   }
 
   onChoose(slide) {
     this.choose.emit(slide);
-    this.onHide(true);
   }
 
   onHide(isHidden) {
     this.hide.emit(isHidden);
   }
 
-  resize(e: any) {
+  changeImgStyle(e: any) {
+      // Display all images
     this.onHide(false);
+
+      // Change class after click
     if (e.target.classList.contains('img-def')) {
       // If img wasn't clicked before
 
@@ -56,8 +54,4 @@ export class SideComponent {
     }
 
   }
-
-  // showImgInModal(slide) {
-  //   this.callModal.emit(slide);
-  // }
 }

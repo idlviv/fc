@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { slides } from '../components/data';
 import { Slides } from '../components/slides';
-declare var $: any;
+declare let $: any;
 
 @Component({
   moduleId: module.id,
@@ -26,6 +26,11 @@ export class HomeComponent implements OnInit {
 
   choose(slide) {
     this.slide = slide;
+    if (document.documentElement.clientWidth < 768) {
+      $('#myModal').modal('show');
+    } else {
+      window.scrollTo(0, 150);
+    }
 
 
   }
@@ -34,14 +39,4 @@ export class HomeComponent implements OnInit {
     this.isHiddenVizComponent = isHidden;
   }
 
-  showModal() {
-
-    // let p : HTMLElement = <HTMLElement>document.querySelector('#myModal');
-    // console.log(p);
-    // p.classList.remove('fade');
-    // p.classList.add('in');
-    // p.style.display = "block"
-    // console.log($('#myModal').parent);
-    $('#myModal').modal('show');
-  }
 }

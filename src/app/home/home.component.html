@@ -3,9 +3,9 @@
     <carousel-component></carousel-component>
     <hr>
   </div>
-  <div class="row">
+  <div class="row" name="topOfPage">
     <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" align="center">
-      <side-component (choose)="choose($event)" (choose)="showModal()" (hide)="hide($event)" [slides]="slides"></side-component>
+      <side-component (choose)="choose($event)" (hide)="hide($event)" [slides]="slides"></side-component>
     </div>
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
       <viz-component [slide]="slide" [isHiddenVizComponent]="isHiddenVizComponent"></viz-component>
@@ -14,7 +14,6 @@
     </div>
   </div>
 </div>
-
 
 
 
