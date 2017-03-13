@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit {
     if (document.documentElement.clientWidth < 768) {
       $('#myModal').modal('show');
     } else {
-      window.scrollTo(0, 150);
+      window.scrollTo(0, 0);
     }
 
 
