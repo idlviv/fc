@@ -11,5 +11,6 @@ export class Slides {
                public active: boolean,
                public srcImgSmall: string,
                public srcImgBig: string,
+               public srcImgBig2: string,
   ) {}
 }
