@@ -9,6 +9,7 @@ import { Slides } from './slides';
 })
 export class ModalComponent  {
   @Input() slide: Slides;
+  @Input() isSideEmitter: boolean;
 
   constructor() {
   }
