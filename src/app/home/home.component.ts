@@ -11,7 +11,7 @@ declare let $: any;
 })
 export class HomeComponent implements OnInit {
   slide: Slides;
-  slides: any;
+  slides: Slides[];
   isHiddenVizComponent: boolean;
   isSideEmitter: boolean;
 
@@ -33,7 +33,6 @@ export class HomeComponent implements OnInit {
     } else {
       window.scrollTo(0, 0);
     }
-    // this.isSideEmitter = false;
   }
 
   chooseMain(slide) {
