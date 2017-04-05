@@ -8,7 +8,7 @@ import { Slides } from './slides';
   styleUrls: ['./side.component.css']
 })
 export class SideComponent {
-  @Output() choose = new EventEmitter();
+  @Output() chooseSide = new EventEmitter();
   @Output() hide = new EventEmitter();
   // @Output() callModal = new EventEmitter();
   @Input() slides: Slides[];
@@ -18,7 +18,7 @@ export class SideComponent {
   }
 
   onChoose(slide) {
-    this.choose.emit(slide);
+    this.chooseSide.emit(slide);
   }
 
   onHide(isHidden) {

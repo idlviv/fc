@@ -1,7 +1,8 @@
   <div class="row scrolling">
     <div class="col-xs-4 col-sm-6" *ngFor="let slide of slides; let i = index">
 
-      <img *ngIf="slide.show" [class.sale]="slide.sale" class="thumbnailImages img-responsive thumbnail img-def" src="{{slide.srcImgSmall}}"
+      <img *ngIf="slide.show" [class.sale]="slide.sale" class="thumbnailImages img-responsive thumbnail img-def"
+           src="{{slide.srcImgSmall}}"
            (click)="onChoose(slide)"
            (click)="changeImgStyle($event)"
            alt="">

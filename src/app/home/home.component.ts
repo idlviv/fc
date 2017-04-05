@@ -14,7 +14,6 @@ export class HomeComponent implements OnInit {
   slides: any;
   isHiddenVizComponent: boolean;
 
-
   constructor() {
     this.slides = slides;
     this.isHiddenVizComponent = true;
@@ -24,15 +23,19 @@ export class HomeComponent implements OnInit {
     this.slide = slides[0];
   }
 
-  choose(slide) {
+  chooseSide(slide, isMain) {
+    console.log(isMain);
     this.slide = slide;
     if (document.documentElement.clientWidth < 768) {
       $('#myModal').modal('show');
     } else {
       window.scrollTo(0, 0);
     }
+  }
 
-
+  chooseMain(slide) {
+    this.slide = slide;
+    $('#myModal').modal('show');
   }
 
   hide(isHidden) {

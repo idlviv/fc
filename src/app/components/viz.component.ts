@@ -1,4 +1,4 @@
-import { Component, Input} from '@angular/core';
+import { Component, Output, Input, EventEmitter} from '@angular/core';
 import { Slides } from './slides';
 
 @Component({
@@ -10,10 +10,14 @@ import { Slides } from './slides';
 export class VizComponent  {
   @Input() slide: Slides;
   @Input() isHiddenVizComponent: boolean;
+  @Output() chooseMain = new EventEmitter();
 
-  constructor() {
+  constructor() {}
 
+  onChoose(slide) {
+    this.chooseMain.emit(slide);
   }
+
   hide() {
     if (this.isHiddenVizComponent) {
       return 'ifHidden';

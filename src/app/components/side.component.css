@@ -1,16 +1,15 @@
 .img-clicked {
   width: 150px;
   height: auto;
-  padding: 3px;
+  padding: 2px;
   background-color: #f05653;
 }
 .img-def {
   width: 150px;
   height: auto;
-  padding: 8px;
+  padding: 3px;
   background-color: transparent;
 }
-
 .scrolling {
   overflow: auto;
   width: 100%;
