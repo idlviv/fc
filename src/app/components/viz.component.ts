@@ -3,19 +3,20 @@ import { Slides } from './slides';
 
 @Component({
   moduleId: module.id,
-  selector: 'viz-component',
+  selector: 'app-viz-component',
   templateUrl: './viz.component.html',
   styleUrls: ['./viz.component.css']
 })
+
 export class VizComponent  {
   @Input() slide: Slides;
   @Input() isHiddenVizComponent: boolean;
-  @Output() chooseMain = new EventEmitter();
+  @Output() choose = new EventEmitter();
 
   constructor() {}
 
-  onChoose(slide) {
-    this.chooseMain.emit(slide);
+  onChoose(slide: Slides) {
+    this.choose.emit(slide);
   }
 
   hide() {
@@ -25,5 +26,5 @@ export class VizComponent  {
       return 'ifNotHidden';
     }
   }
-}
 
+}

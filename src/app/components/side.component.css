@@ -4,18 +4,17 @@
   padding: 2px;
   background-color: #f05653;
 }
+
 .img-def {
   width: 150px;
   height: auto;
   padding: 3px;
   background-color: transparent;
 }
+
 .scrolling {
   overflow: auto;
   width: 100%;
   height: 100%;
 }
-.sale {
 
-
-}

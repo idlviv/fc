@@ -3,25 +3,24 @@ import { Slides } from './slides';
 
 @Component({
   moduleId: module.id,
-  selector: 'side-component',
+  selector: 'app-side-component',
   templateUrl: './side.component.html',
   styleUrls: ['./side.component.css']
 })
+
 export class SideComponent {
-  @Output() chooseSide = new EventEmitter();
+  @Output() choose = new EventEmitter();
   @Output() hide = new EventEmitter();
   // @Output() callModal = new EventEmitter();
   @Input() slides: Slides[];
 
+  constructor(private render: Renderer) {}
 
-  constructor(private render:Renderer) {
+  onChoose(slide: Slides) {
+    this.choose.emit(slide);
   }
 
-  onChoose(slide) {
-    this.chooseSide.emit(slide);
-  }
-
-  onHide(isHidden) {
+  onHide(isHidden: boolean) {
     this.hide.emit(isHidden);
   }
 
@@ -34,24 +33,24 @@ export class SideComponent {
       // If img wasn't clicked before
 
       // take all previously clicked images to default class
-      let sel = document.querySelectorAll('.thumbnailImages');
-      Array.from(sel).forEach(function (item) {
+      const selectThumbnails = document.querySelectorAll('.thumbnailImages');
+      Array.from(selectThumbnails).forEach(function(item) {
         item.classList.remove('img-clicked');
         item.classList.add('img-def');
       });
       // take only clicked image to clicked class
-      this.render.setElementClass(e.target,'img-def',false);
-      this.render.setElementClass(e.target,'img-clicked',true);
+      this.render.setElementClass(e.target, 'img-def', false);
+      this.render.setElementClass(e.target, 'img-clicked', true);
     } else {
       // if img already clicked take it to default class
-      let sel = document.querySelectorAll('.thumbnailImages');
-      Array.from(sel).forEach(function (item) {
+      const selectThumbnails = document.querySelectorAll('.thumbnailImages');
+      Array.from(selectThumbnails).forEach(function(item) {
         item.classList.remove('img-clicked');
         item.classList.add('img-def');
       });
       // hide viz component
       this.onHide(true);
     }
-
   }
+
 }

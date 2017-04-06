@@ -1,20 +1,17 @@
-.item-main-pic {
-  width: 400px;
-  height: auto;
-  padding: 3px;
+.price-digits-modal {
+  font-size: 43px;
+  line-height: 42px;
   float: left;
+  color: #009fff;
+  letter-spacing: -2px;
+  margin: 5px;
 }
-.ifHidden {
-  display: none;
-}
-.ifNotHidden {
-  display: block;
-}
-.modal-content {
-  display: inline-block;
-  height: 50px;
-  /*width: 400px;*/
-  /*height: auto;*/
-  /*padding: 3px;*/
-  /*float: left;*/
+
+.price-letters-modal {
+  font-size: 23px;
+  line-height: 42px;
+  float: left;
+  color: #000000;
+  letter-spacing: -2px;
+  margin: 5px;
 }

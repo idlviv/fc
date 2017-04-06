@@ -3,18 +3,15 @@ import { Slides } from './slides';
 
 @Component({
   moduleId: module.id,
-  selector: 'modal-component',
+  selector: 'app-modal-component',
   templateUrl: './modal.component.html',
   styleUrls: ['./modal.component.css']
 })
+
 export class ModalComponent  {
   @Input() slide: Slides;
   @Input() isSideEmitter: boolean;
 
-  constructor() {
-  }
+  constructor() {}
 
-clicker() {
 }
-}
-

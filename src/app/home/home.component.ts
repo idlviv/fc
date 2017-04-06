@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { slides } from '../components/data';
 import { Slides } from '../components/slides';
-declare let $: any;
+declare const $: any;
 
 @Component({
   moduleId: module.id,
@@ -9,11 +9,11 @@ declare let $: any;
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
+
 export class HomeComponent implements OnInit {
   slide: Slides;
   slides: Slides[];
   isHiddenVizComponent: boolean;
-  isSideEmitter: boolean;
 
   constructor() {
     this.slides = slides;
@@ -24,23 +24,16 @@ export class HomeComponent implements OnInit {
     this.slide = slides[0];
   }
 
-  chooseSide(slide, isSideEmitter) {
-    console.log(isSideEmitter);
+  choose(slide: Slides, isSideEmitter: boolean) {
     this.slide = slide;
-    this.isSideEmitter = isSideEmitter;
-    if (document.documentElement.clientWidth < 768) {
+    if (document.documentElement.clientWidth < 768 && isSideEmitter || !isSideEmitter) {
       $('#myModal').modal('show');
     } else {
       window.scrollTo(0, 0);
     }
   }
 
-  chooseMain(slide) {
-    this.slide = slide;
-    $('#myModal').modal('show');
-  }
-
-  hide(isHidden) {
+  hide(isHidden: boolean) {
     this.isHiddenVizComponent = isHidden;
   }
 
