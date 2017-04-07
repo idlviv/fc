@@ -1,46 +1,46 @@
-.price-digits-viz {
-  font-size: 53px;
-  line-height: 52px;
-  float: left;
-  color: #009fff;
-  letter-spacing: -2px;
-  margin: 5px;
-  margin-left: 20px;
-}
+/*.price-digits-viz {*/
+  /*font-size: 53px;*/
+  /*line-height: 52px;*/
+  /*float: left;*/
+  /*color: #009fff;*/
+  /*letter-spacing: -2px;*/
+  /*margin: 5px;*/
+  /*margin-left: 20px;*/
+/*}*/
 
-.price-letters-viz {
-  font-size: 23px;
-  line-height: 22px;
-  float: left;
-  color: #000000;
-  letter-spacing: -2px;
-  margin: 5px;
-  margin-left: 20px;
+/*.price-letters-viz {*/
+  /*font-size: 23px;*/
+  /*line-height: 22px;*/
+  /*float: left;*/
+  /*color: #000000;*/
+  /*letter-spacing: -2px;*/
+  /*margin: 5px;*/
+  /*margin-left: 20px;*/
 
-}
+/*}*/
 
-.item-main-pic {
-  width: 300px;
-  height: auto;
-  padding: 3px;
-  float: right;
-}
+/*.item-main-pic {*/
+  /*width: 300px;*/
+  /*height: auto;*/
+  /*padding: 3px;*/
+  /*float: right;*/
+/*}*/
 
-.item-horizontal-pic {
-  width: 150px;
-  height: auto;
-  padding: 3px;
-  float: right;
-}
+/*.item-horizontal-pic {*/
+  /*width: 150px;*/
+  /*height: auto;*/
+  /*padding: 3px;*/
+  /*float: right;*/
+/*}*/
 
-.title {
-  display: inline-block;
-}
+/*.title {*/
+  /*display: inline-block;*/
+/*}*/
 
-.ifHidden {
-  display: none;
-}
+/*.ifHidden {*/
+  /*display: none;*/
+/*}*/
 
-.ifNotHidden {
-  display: block;
-}
+/*.ifNotHidden {*/
+  /*display: block;*/
+/*}*/
