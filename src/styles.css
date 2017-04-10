@@ -4,77 +4,90 @@
   margin: 5px;
 }
 
-.price-modal-digits {
+.modal-price-digits {
   font-size: 43px;
   line-height: 42px;
   color: #009fff;
 }
 
-.price-modal-letters {
+.modal-price-letters {
   font-size: 23px;
   line-height: 42px;
   color: #000000;
 }
 
-.price-viz-digits {
+.viz-price-digits {
   font-size: 53px;
   line-height: 52px;
   color: #009fff;
   margin-left: 20px;
 }
 
-.price-viz-letters {
+.viz-price-letters {
   font-size: 23px;
   line-height: 22px;
   color: #000000;
   margin-left: 20px;
 }
 
-
-/*!*app-viz-component*!*/
-
-.viz-pic-main {
+.viz-main-img {
   width: 300px;
   height: auto;
   padding: 3px;
   float: right;
 }
-.viz-pic-horizontal {
-  width: 150px;
-  height: auto;
-  padding: 3px;
-  float: right;
-}
 
-.title {
-  display: inline-block;
-}
-
-.ifHidden {
+.viz-ifHidden {
   display: none;
 }
 
-.ifNotHidden {
+.viz-ifNotHidden {
   display: block;
 }
 
-/*!*app-side-component*!*/
-.img-clicked {
+.side {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.side-img {
+  margin-bottom: 3px;
   width: 150px;
   height: auto;
+}
+
+.side-img-clicked {
   padding: 2px;
   background-color: #f05653;
 }
 
-.img-def {
-  width: 150px;
-  height: auto;
+.side-img-default {
   padding: 3px;
   background-color: transparent;
 }
 
-.scrolling {
-  overflow: auto;
-  width: 100%;
-  height: 100%;
+.side-title {
+  margin-bottom: 15px;
+}
+
+.content-collapse {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.content-img-div {
+  width: 20%;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content-img-logo {
+  margin: 10px auto;
+}
+
+.content-block {
+  margin-top: 25px;
+  margin-bottom: 25px;
 }

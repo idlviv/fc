@@ -1,6 +1,6 @@
 export const slides = [
   {
-    title: 'Планкіт Грейджой',
+    title: 'Грейджой',
     itemNumber: 10001,
     collection: 'Plankit',
     design: 'Greyjoy',
@@ -21,7 +21,7 @@ export const slides = [
     srcImgBig2: './assets/plankit/img_big/wood_vertical/big_w_v_greyjoy.jpg',
   },
   {
-    title: 'Планкіт Ерін',
+    title: 'Ерін',
     itemNumber: 10002,
     collection: 'Plankit',
     design: 'Arryn',
@@ -42,7 +42,7 @@ export const slides = [
     srcImgBig2: './assets/plankit/img_big/wood_vertical/big_w_v_arryn.jpg',
   },
   {
-    title: 'Планкіт Баратеон',
+    title: 'Баратеон',
     itemNumber: 10003,
     collection: 'Plankit',
     design: 'Baratheon',
@@ -63,7 +63,7 @@ export const slides = [
     srcImgBig2: './assets/plankit/img_big/wood_vertical/big_w_v_baratheon.jpg',
   },
   {
-    title: 'Планкіт Мормонт',
+    title: 'Мормонт',
     itemNumber: 10004,
     collection: 'Plankit',
     design: 'Mormont',
@@ -84,7 +84,7 @@ export const slides = [
     srcImgBig2: './assets/plankit/img_big/wood_vertical/big_w_v_mormont.jpg',
   },
   {
-    title: 'Планкіт Старк',
+    title: 'Старк',
     itemNumber: 10005,
     collection: 'Plankit',
     design: 'Stark',

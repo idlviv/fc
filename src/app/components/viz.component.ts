@@ -21,9 +21,9 @@ export class VizComponent  {
 
   hide() {
     if (this.isHiddenVizComponent) {
-      return 'ifHidden';
+      return 'viz-ifHidden';
     } else {
-      return 'ifNotHidden';
+      return 'viz-ifNotHidden';
     }
   }
 

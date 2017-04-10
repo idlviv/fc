@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
 
   constructor() {
     this.slides = slides;
-    this.isHiddenVizComponent = true;
+    this.isHiddenVizComponent = false;
   }
 
   ngOnInit() {

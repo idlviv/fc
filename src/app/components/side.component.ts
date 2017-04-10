@@ -29,24 +29,24 @@ export class SideComponent {
     this.onHide(false);
 
       // Change class after click
-    if (e.target.classList.contains('img-def')) {
+    if (e.target.classList.contains('side-img-default')) {
       // If img wasn't clicked before
 
-      // take all previously clicked images to default class
-      const selectThumbnails = document.querySelectorAll('.thumbnailImages');
+      // take all clicked images to default class
+      const selectThumbnails = document.querySelectorAll('.side-img');
       Array.from(selectThumbnails).forEach(function(item) {
-        item.classList.remove('img-clicked');
-        item.classList.add('img-def');
+        item.classList.remove('side-img-clicked');
+        item.classList.add('side-img-default');
       });
       // take only clicked image to clicked class
-      this.render.setElementClass(e.target, 'img-def', false);
-      this.render.setElementClass(e.target, 'img-clicked', true);
+      this.render.setElementClass(e.target, 'side-img-default', false);
+      this.render.setElementClass(e.target, 'side-img-clicked', true);
     } else {
       // if img already clicked take it to default class
-      const selectThumbnails = document.querySelectorAll('.thumbnailImages');
+      const selectThumbnails = document.querySelectorAll('.side-img');
       Array.from(selectThumbnails).forEach(function(item) {
-        item.classList.remove('img-clicked');
-        item.classList.add('img-def');
+        item.classList.remove('side-img-clicked');
+        item.classList.add('side-img-default');
       });
       // hide viz component
       this.onHide(true);
