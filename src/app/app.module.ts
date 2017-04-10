@@ -12,11 +12,12 @@ import { CarouselComponent } from './components/carousel.component';
 import { SideComponent } from './components/side.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './components/footer.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, routes, HttpModule ],
   declarations: [ AppComponent, VizComponent, SideComponent, ModalComponent, ContentComponent,
-    CarouselComponent, AboutComponent,  HomeComponent],
+    CarouselComponent, AboutComponent,  HomeComponent, FooterComponent],
   providers: [],
   bootstrap:    [ AppComponent ]
 })

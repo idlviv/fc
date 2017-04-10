@@ -12,9 +12,14 @@
         <img class="img-responsive thumbnail" src="{{slide.srcImgBig}}" alt="">
         <div class="row">
           <div class="col-xs-12">
-            <span class="price modal-price-letters"></span>
-            <span class="price modal-price-digits">{{slide.regularPrice}}</span>
-            <span class="price modal-price-letters">грн за м2</span></div>
+            <div class="well modal-price-block">
+              <p class="price modal-price-digits">{{slide.regularPrice}}</p>
+              <p class="price modal-price-letters">  грн за м2</p>
+            </div>
+
+            <!--<span class="price modal-price-letters"></span>-->
+            <!--<span class="price modal-price-digits">{{slide.regularPrice}}</span>-->
+            <!--<span class="price modal-price-letters">грн за м2</span></div>-->
          </div>
 
       <!--<div class="modal-footer" *ngIf="isSideEmitter">-->

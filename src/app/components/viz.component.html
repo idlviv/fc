@@ -1,26 +1,21 @@
 <div class="row hidden-xs" [ngClass]="hide()">
 
-    <div class="col-sm-4">
-      <img class="img-responsive thumbnail viz-main-img" (click)="onChoose(slide)" src="{{slide.srcImgMain}}"
-           alt="Головне зображення">
-    </div>
+  <div class="col-sm-4">
+    <img class="img-responsive thumbnail viz-main-img" (click)="onChoose(slide)" src="{{slide.srcImgMain}}"
+         alt="Головне зображення">
+  </div>
 
-    <div class="col-sm-8">
-
-      <h2>{{slide.title}}</h2>
-      <hr>
-        <div class="row">
-          <p class="price viz-price-digits">{{slide.regularPrice}}</p>
-        </div>
-        <div class="row">
-          <p class="price viz-price-letters">грн за м2</p>
-        </div>
+  <div class="col-sm-8">
+    <h2>{{slide.title}}</h2>
+    <hr>
+    <div class="well viz-price-block">
+      <p class="price viz-price-digits">{{slide.regularPrice}}</p>
+      <p class="price viz-price-letters">  грн за м2</p>
     </div>
+  </div>
 
-    <div class="row">
-      <div class="col-sm-12">
-        <p>{{slide.description}}</p>
-      </div>
-    </div>
+  <div class="col-sm-12">
+    <p>{{slide.description}}</p>
+  </div>
 
 </div>

@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit {
     if (document.documentElement.clientWidth < 768 && isSideEmitter || !isSideEmitter) {
       $('#myModal').modal('show');
     } else {
-      window.scrollTo(0, 0);
+      window.scrollTo(0, 220);
     }
   }
 
