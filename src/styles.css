@@ -17,8 +17,8 @@
 }
 
 .viz-price-digits {
-  font-size: 53px;
-  line-height: 52px;
+  font-size: 43px;
+  line-height: 42px;
   color: #009fff;
   margin-left: 20px;
 }
@@ -30,10 +30,18 @@
   margin-left: 20px;
 }
 
-.viz-price-block,
-.modal-price-block {
+.viz-price-block {
   display: inline-block;
   margin-bottom: 0;
+  padding: 5px;
+}
+
+.modal-price-block {
+  display: inline-block;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-right: 3px;
 }
 
 .viz-main-img {
@@ -106,5 +114,17 @@
 
 .footer-block {
   background-color: #cccccc;
+  padding: 10px;
+}
+
+.modal-block {
+  padding: 3px;
+}
+
+.modal-img-main {
+  margin-bottom: 3px;
+}
+
+.modal-title {
   padding: 10px;
 }
