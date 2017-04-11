@@ -1,3 +1,7 @@
+.carousel-width {
+  max-width: 960px;
+}
+
 .price {
   float: left;
   letter-spacing: -2px;
@@ -118,7 +122,7 @@
 }
 
 .modal-block {
-  padding: 3px;
+  padding: 5px;
 }
 
 .modal-img-main {
@@ -127,4 +131,16 @@
 
 .modal-title {
   padding: 10px;
+}
+
+.about-img-main {
+  padding: 10px;
+  float: right;
+}
+
+.content-img-flow {
+  width: 450px;
+  height: auto;
+  padding: 10px;
+  float: left;
 }
